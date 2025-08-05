@@ -43,7 +43,7 @@
 	"webEndpointUrlTemplate": "https://{{uuid}}.vscode-cdn.net/{{quality}}/{{commit}}",
 	"nlsCoreBaseUrl": "https://www.vscode-unpkg.net/nls/",
 	"webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/{{quality}}/{{commit}}/out/vs/workbench/contrib/webview/browser/pre/",
-	"quality": "stable",
+	"quality": "insider",
 	"extensionsGallery": {
 		"nlsBaseUrl": "https://www.vscode-unpkg.net/_lp/",
 		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
@@ -74,7 +74,6 @@
 	},
 	"extensionProperties": {
 		"github.copilot-chat": {
-			"hasPrereleaseVersion": false,
 			"excludeVersionRange": "<=0.16.1"
 		},
 		"github.copilot": {
@@ -94,6 +93,7 @@
 		"tokenEntitlementUrl": "https://api.github.com/copilot_internal/v2/token"
 	},
 	"profileTemplatesUrl": "https://main.vscode-cdn.net/core/profile-templates.json",
+	"emergencyAlertUrl": "https://main.vscode-cdn.net/core/insiders.json",
 	"extensionPublisherOrgs": [
 		"microsoft"
 	],
@@ -956,12 +956,39 @@
 				}
 			}
 		},
+		"stripe": {
+			"friendlyName": "Stripe CLI",
+			"windowsPath": "%USERPROFILE%\\scoop\\shims\\stripe.exe",
+			"recommendations": {
+				"stripe.vscode-stripe": {
+					"name": "Stripe"
+				}
+			}
+		},
 		"mongo": {
 			"friendlyName": "Mongo",
 			"windowsPath": "%ProgramFiles%\\MongoDB\\Server\\3.6\\bin\\mongod.exe",
 			"recommendations": {
 				"ms-azuretools.vscode-cosmosdb": {
 					"name": "Azure Databases"
+				}
+			}
+		},
+		"mongodb compass": {
+			"friendlyName": "MongoDB Compass",
+			"windowsPath": "%ProgramFiles%\\MongoDB Compass",
+			"recommendations": {
+				"mongodb.mongodb-vscode": {
+					"name": "MongoDB for VS Code"
+				}
+			}
+		},
+		"mongodb": {
+			"friendlyName": "MongoDB",
+			"windowsPath": "%ProgramFiles%\\MongoDB",
+			"recommendations": {
+				"mongodb.mongodb-vscode": {
+					"name": "MongoDB for VS Code"
 				}
 			}
 		},
@@ -1743,12 +1770,12 @@
 		"companyName": "Microsoft"
 	},
 	"appCenter": {
-		"win32-x64": "appcenter://code?aid=a4e3233c-699c-46ec-b4f4-9c2a77254662",
-		"win32-arm64": "appcenter://code?aid=3712d786-7cc8-4f11-8b08-cc12eab6d4f7",
-		"linux-x64": "appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171",
-		"darwin": "appcenter://code?aid=860d6632-f65b-490b-85a8-3e72944f7774",
-		"darwin-arm64": "appcenter://code?aid=be71415d-3893-4ae5-b453-e537b9668a10",
-		"darwin-universal": "appcenter://code?aid=de75e3cc-e22f-4f42-a03f-1409c21d8af8"
+		"win32-x64": "appcenter://code-insiders?aid=f047834f-d0e1-4aef-8870-5805ee483b2d",
+		"win32-arm64": "appcenter://code-insiders?aid=fb1c1670-432e-43dc-a88e-8c5ed7293213",
+		"linux-x64": "appcenter://code-insiders?aid=a04472a4-f4ea-4854-bf12-95bb0f2dd01a",
+		"darwin": "appcenter://code-insiders?aid=5e4c15d3-0a3c-4c3b-a294-2a40850616a2",
+		"darwin-arm64": "appcenter://code-insiders?aid=d6599f8f-6aee-4013-b47c-1e1269faa19a",
+		"darwin-universal": "appcenter://code-insiders?aid=9198980f-302c-4143-9ddf-29914b57be2e"
 	},
 	"enableTelemetry": true,
 	"aiConfig": {
@@ -1767,7 +1794,7 @@
 	],
 	"documentationUrl": "https://go.microsoft.com/fwlink/?LinkID=533484#vscode",
 	"serverDocumentationUrl": "https://aka.ms/vscode-server-doc",
-	"releaseNotesUrl": "https://go.microsoft.com/fwlink/?LinkID=533483#vscode",
+	"releaseNotesUrl": "https://go.microsoft.com/fwlink/?LinkId=724002",
 	"keyboardShortcutsUrlMac": "https://go.microsoft.com/fwlink/?linkid=832143",
 	"keyboardShortcutsUrlLinux": "https://go.microsoft.com/fwlink/?linkid=832144",
 	"keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
@@ -1778,7 +1805,7 @@
 	"requestFeatureUrl": "https://go.microsoft.com/fwlink/?LinkID=533482",
 	"reportIssueUrl": "https://github.com/Microsoft/vscode/issues/new",
 	"reportMarketplaceIssueUrl": "https://github.com/microsoft/vsmarketplace/issues/new",
-	"licenseUrl": "https://go.microsoft.com/fwlink/?LinkID=533485",
+	"licenseUrl": "https://go.microsoft.com/fwlink/?LinkID=761088",
 	"serverLicenseUrl": "https://aka.ms/vscode-server-license",
 	"privacyStatementUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
 	"showTelemetryOptOut": true,
@@ -1826,8 +1853,7 @@
 	],
 	"extensionsEnabledWithApiProposalVersion": [
 		"GitHub.copilot-chat",
-		"ms-vscode.vscode-commander",
-		"ms-vscode.vscode-copilot-vision"
+		"ms-vscode.vscode-commander"
 	],
 	"extensionEnabledApiProposals": {
 		"ms-azuretools.vscode-dev-azurecloudshell": [
@@ -1969,6 +1995,7 @@
 			"activeComment",
 			"chatParticipantAdditions",
 			"chatParticipantPrivate",
+			"chatSessionsProvider",
 			"codiconDecoration",
 			"codeActionRanges",
 			"commentingRangeHint",
@@ -1984,6 +2011,8 @@
 			"contribMultiDiffEditorMenus",
 			"contribShareMenu",
 			"diffCommand",
+			"languageModelDataPart",
+			"languageModelToolResultAudience",
 			"quickDiffProvider",
 			"remoteCodingAgents",
 			"shareProvider",
@@ -1992,10 +2021,14 @@
 			"treeViewMarkdownMessage"
 		],
 		"GitHub.copilot": [
-			"inlineCompletionsAdditions"
+			"inlineCompletionsAdditions",
+			"interactive",
+			"terminalDataWriteEvent"
 		],
 		"GitHub.copilot-nightly": [
-			"inlineCompletionsAdditions"
+			"inlineCompletionsAdditions",
+			"interactive",
+			"terminalDataWriteEvent"
 		],
 		"GitHub.copilot-chat": [
 			"interactive",
@@ -2003,14 +2036,14 @@
 			"terminalExecuteCommandEvent",
 			"terminalSelection",
 			"terminalQuickFixProvider",
+			"chatProvider",
 			"chatParticipantAdditions",
 			"defaultChatParticipant",
 			"embeddings",
-			"chatEditing",
-			"chatProvider",
 			"mappedEditsProvider",
 			"aiRelatedInformation",
 			"aiSettingsSearch",
+			"chatEditing",
 			"codeActionAI",
 			"findTextInFiles",
 			"findTextInFiles2",
@@ -2041,7 +2074,9 @@
 			"taskProblemMatcherStatus",
 			"contribLanguageModelToolSets",
 			"textDocumentChangeReason",
-			"resolvers"
+			"resolvers",
+			"taskExecutionTerminal",
+			"dataChannels"
 		],
 		"GitHub.remotehub": [
 			"contribRemoteHelp",
@@ -2109,7 +2144,6 @@
 			"terminalDataWriteEvent",
 			"chatParticipantAdditions"
 		],
-		"vscjava.vscode-java-pack": [],
 		"ms-dotnettools.csdevkit": [
 			"inlineCompletionsAdditions"
 		],
@@ -2128,15 +2162,19 @@
 			"chatParticipantAdditions",
 			"languageModelSystem"
 		],
-		"ms-toolsai.datawrangler": [],
-		"ms-vscode.vscode-commander": [],
-		"ms-vscode.vscode-websearchforcopilot": [],
 		"ms-vscode.vscode-copilot-vision": [
 			"chatReferenceBinaryData",
 			"codeActionAI"
 		],
+		"lramos15.model-playground": [
+			"chatProvider"
+		],
 		"ms-autodev.vscode-autodev": [
 			"chatParticipantAdditions"
+		],
+		"codetrek.haystack-search": [
+			"fileSearchProvider",
+			"textSearchProvider2"
 		],
 		"vscjava.vscode-java-upgrade": [
 			"chatParticipantAdditions"
@@ -2342,6 +2380,7 @@
 	],
 	"trustedExtensionAuthAccess": {
 		"github": [
+			"vscode.git",
 			"vscode.github",
 			"github.remotehub",
 			"ms-vscode.remote-server",
@@ -2353,6 +2392,7 @@
 			"ms-azuretools.vscode-azure-github-copilot"
 		],
 		"github-enterprise": [
+			"vscode.git",
 			"vscode.github",
 			"github.remotehub",
 			"ms-vscode.remote-server",
@@ -2364,6 +2404,7 @@
 			"ms-azuretools.vscode-azure-github-copilot"
 		],
 		"microsoft": [
+			"vscode.git",
 			"github.copilot-chat",
 			"ms-vscode.azure-repos",
 			"ms-vscode.remote-server",
@@ -2376,6 +2417,7 @@
 			"ms-toolsai.vscode-ai-remote"
 		],
 		"microsoft-sovereign-cloud": [
+			"vscode.git",
 			"ms-vscode.azure-repos",
 			"ms-vscode.remote-server",
 			"ms-vsliveshare.vsliveshare",
@@ -2409,10 +2451,10 @@
 		"clientId": "aebc6443-996d-45c2-90f0-388ff96faa56"
 	},
 	"configurationSync.store": {
-		"url": "https://vscode-sync.trafficmanager.net/",
+		"url": "https://vscode-sync-insiders.trafficmanager.net/",
 		"stableUrl": "https://vscode-sync.trafficmanager.net/",
 		"insidersUrl": "https://vscode-sync-insiders.trafficmanager.net/",
-		"canSwitch": false,
+		"canSwitch": true,
 		"authenticationProviders": {
 			"github": {
 				"scopes": [
@@ -2429,6 +2471,7 @@
 			}
 		}
 	},
+	"enableSyncingProfiles": true,
 	"editSessions.store": {
 		"url": "https://vscode-sync.trafficmanager.net/",
 		"authenticationProviders": {
@@ -2517,12 +2560,24 @@
 		"manageOverageUrl": "https://aka.ms/github-copilot-manage-overage",
 		"upgradePlanUrl": "https://aka.ms/github-copilot-upgrade-plan",
 		"signUpUrl": "https://aka.ms/github-sign-up",
-		"providerId": "github",
-		"providerName": "GitHub",
-		"enterpriseProviderId": "github-enterprise",
-		"enterpriseProviderName": "GHE.com",
-		"alternativeProviderId": "google",
-		"alternativeProviderName": "Google",
+		"provider": {
+			"default": {
+				"id": "github",
+				"name": "GitHub"
+			},
+			"enterprise": {
+				"id": "github-enterprise",
+				"name": "GHE.com"
+			},
+			"google": {
+				"id": "google",
+				"name": "Google"
+			},
+			"apple": {
+				"id": "apple",
+				"name": "Apple"
+			}
+		},
 		"providerUriSetting": "github-enterprise.uri",
 		"providerScopes": [
 			[
@@ -2561,6 +2616,14 @@
 		"github.copilot.nextEditSuggestions.enabled": {
 			"name": "CopilotNextEditSuggestions",
 			"minimumVersion": "1.99"
+		}
+	},
+	"win32ContextMenu": {
+		"x64": {
+			"clsid": "799F4F7E-5934-4001-A74C-E207F44F05B8"
+		},
+		"arm64": {
+			"clsid": "7D34756D-32DD-4EE6-B99F-2691C0DAD875"
 		}
 	},
 	"builtInExtensions": [
@@ -2613,16 +2676,16 @@
 			}
 		}
 	],
-	"commit": "488a1f239235055e34e673291fb8d8c810886f81",
-	"date": "2025-07-29T03:00:23.339Z",
+	"commit": "34769c5d17df269aed44407eb1a1c0e6362e2d79",
+	"date": "2025-08-04T21:43:35.566Z",
 	"checksums": {
-		"vs/base/parts/sandbox/electron-browser/preload.js": "bbvxN/LVvRxKbQV6yHdWubdOg4+cUSZ0eTRWooRp4XI",
-		"vs/workbench/workbench.desktop.main.js": "DduWcONjsIj7abRoGDLVoxIY/RE7g70gV4A/MQl2Ci4",
-		"vs/workbench/workbench.desktop.main.css": "dzukyXhh7iVjpipHuxA+2O1RNY0/S7kkuu8Oe2i2Xrc",
-		"vs/workbench/api/node/extensionHostProcess.js": "1xJkw7Wh4RxXTFiRsHaLKQRKqgHbQjx58YEWDlYf2/0",
-		"vs/code/electron-browser/workbench/workbench.html": "RhgaUfNHCwkUtPNBt+HPnUAO0QW9qf+he7Nf/Dsx/dg",
-		"vs/code/electron-browser/workbench/workbench.js": "UZXhZ5uPlzGHGz86ysm3J0SKUWhxaX1avr6uAFRLWIg"
+		"vs/base/parts/sandbox/electron-browser/preload.js": "FsEVdLzx5Rz+e1+coNcB98796ZzMXB1OiiqsZODKSco",
+		"vs/workbench/workbench.desktop.main.js": "k61fjrqZ1bSJvUuQ1mCX7qechsZuX3OAoBVwXwcDKnA",
+		"vs/workbench/workbench.desktop.main.css": "gysX9MO41V2NauUUe+gZRhh0De+S/y31stNaqMOjfRo",
+		"vs/workbench/api/node/extensionHostProcess.js": "rO7K63+lP71IWdYvt5owcJeml/5gu8junMPWb6VafkA",
+		"vs/code/electron-browser/workbench/workbench.html": "e+u7suTqTA+xoGUabJ3p7qVjdIpOgqUtSJOPvyoWZZg",
+		"vs/code/electron-browser/workbench/workbench.js": "+VVSZTbn2RQEyskYxxPUJy3tyAEqbPHYQAYmNtvVmw4"
 	},
-	"version": "1.102.3",
+	"version": "1.103.0-insider",
 	"darwinUniversalAssetId": "darwin-universal"
 }
