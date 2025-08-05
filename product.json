@@ -2,10 +2,10 @@
 	"nameShort": "Code",
 	"nameLong": "Visual Studio Code",
 	"applicationName": "code",
-	"win32x64AppId": "{{EA457B21-F73E-494C-ACAB-524FDE069978}",
-	"win32arm64AppId": "{{A5270FC5-65AD-483E-AC30-2C276B63D0AC}",
-	"win32x64UserAppId": "{{771FD6B0-FA20-440A-A002-3B3BAC16DC50}",
-	"win32arm64UserAppId": "{{D9E514E7-1A56-452D-9337-2990C0DC4310}",
+	"win32x64AppId": "{{1287CAD5-7C8D-410D-88B9-0D1EE4A83FF2}",
+	"win32arm64AppId": "{{0AEDB616-9614-463B-97D7-119DD86CCA64}",
+	"win32x64UserAppId": "{{217B4C08-948D-4276-BFBB-BEE930AE5A2C}",
+	"win32arm64UserAppId": "{{69BD8F7B-65EB-4C6F-A14E-44CFA83712C0}",
 	"win32NameVersion": "Microsoft Visual Studio Code",
 	"win32DirName": "Microsoft VS Code",
 	"win32SetupExeBasename": "VSCodeSetup",
@@ -15,8 +15,8 @@
 	"win32RegValueName": "VSCode",
 	"darwinCredits": "resources/darwin/Credits.rtf",
 	"darwinBundleIdentifier": "com.microsoft.VSCode",
-	"darwinProfileUUID": "EBAE60D6-C8A2-4419-92FF-24F8AD5077AB",
-	"darwinProfilePayloadUUID": "C6B5723A-6539-4F31-8A4E-3CC96E51F48C",
+	"darwinProfileUUID": "7CC2F939-3A89-4A22-B9DA-E5B81C0F6C03",
+	"darwinProfilePayloadUUID": "BEA6A398-BD82-4EEC-B626-8464DBB73561",
 	"darwinExecutable": "VSCode",
 	"linuxIconName": "vscode",
 	"licenseFileName": "LICENSE.rtf",
@@ -642,22 +642,6 @@
 			"onFileOpen": [
 				{
 					"pathGlob": "{**/.circleci/config.yml}"
-				}
-			]
-		},
-		"mechatroner.rainbow-csv": {
-			"onFileOpen": [
-				{
-					"pathGlob": "**/*.csv",
-					"important": true
-				}
-			]
-		},
-		"tomoki1207.pdf": {
-			"onFileOpen": [
-				{
-					"pathGlob": "**/*.pdf",
-					"important": true
 				}
 			]
 		},
