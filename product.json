@@ -2,10 +2,10 @@
 	"nameShort": "Code",
 	"nameLong": "Visual Studio Code",
 	"applicationName": "code",
-	"win32x64AppId": "{{1287CAD5-7C8D-410D-88B9-0D1EE4A83FF2}",
-	"win32arm64AppId": "{{0AEDB616-9614-463B-97D7-119DD86CCA64}",
-	"win32x64UserAppId": "{{217B4C08-948D-4276-BFBB-BEE930AE5A2C}",
-	"win32arm64UserAppId": "{{69BD8F7B-65EB-4C6F-A14E-44CFA83712C0}",
+	"win32x64AppId": "{{EA457B21-F73E-494C-ACAB-524FDE069978}",
+	"win32arm64AppId": "{{A5270FC5-65AD-483E-AC30-2C276B63D0AC}",
+	"win32x64UserAppId": "{{771FD6B0-FA20-440A-A002-3B3BAC16DC50}",
+	"win32arm64UserAppId": "{{D9E514E7-1A56-452D-9337-2990C0DC4310}",
 	"win32NameVersion": "Microsoft Visual Studio Code",
 	"win32DirName": "Microsoft VS Code",
 	"win32SetupExeBasename": "VSCodeSetup",
@@ -15,8 +15,8 @@
 	"win32RegValueName": "VSCode",
 	"darwinCredits": "resources/darwin/Credits.rtf",
 	"darwinBundleIdentifier": "com.microsoft.VSCode",
-	"darwinProfileUUID": "7CC2F939-3A89-4A22-B9DA-E5B81C0F6C03",
-	"darwinProfilePayloadUUID": "BEA6A398-BD82-4EEC-B626-8464DBB73561",
+	"darwinProfileUUID": "EBAE60D6-C8A2-4419-92FF-24F8AD5077AB",
+	"darwinProfilePayloadUUID": "C6B5723A-6539-4F31-8A4E-3CC96E51F48C",
 	"darwinExecutable": "VSCode",
 	"linuxIconName": "vscode",
 	"licenseFileName": "LICENSE.rtf",
@@ -43,7 +43,7 @@
 	"webEndpointUrlTemplate": "https://{{uuid}}.vscode-cdn.net/{{quality}}/{{commit}}",
 	"nlsCoreBaseUrl": "https://www.vscode-unpkg.net/nls/",
 	"webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/{{quality}}/{{commit}}/out/vs/workbench/contrib/webview/browser/pre/",
-	"quality": "insider",
+	"quality": "stable",
 	"extensionsGallery": {
 		"nlsBaseUrl": "https://www.vscode-unpkg.net/_lp/",
 		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
@@ -74,6 +74,7 @@
 	},
 	"extensionProperties": {
 		"github.copilot-chat": {
+			"hasPrereleaseVersion": false,
 			"excludeVersionRange": "<=0.16.1"
 		},
 		"github.copilot": {
@@ -93,7 +94,6 @@
 		"tokenEntitlementUrl": "https://api.github.com/copilot_internal/v2/token"
 	},
 	"profileTemplatesUrl": "https://main.vscode-cdn.net/core/profile-templates.json",
-	"emergencyAlertUrl": "https://main.vscode-cdn.net/core/insiders.json",
 	"extensionPublisherOrgs": [
 		"microsoft"
 	],
@@ -645,6 +645,22 @@
 				}
 			]
 		},
+		"mechatroner.rainbow-csv": {
+			"onFileOpen": [
+				{
+					"pathGlob": "**/*.csv",
+					"important": true
+				}
+			]
+		},
+		"tomoki1207.pdf": {
+			"onFileOpen": [
+				{
+					"pathGlob": "**/*.pdf",
+					"important": true
+				}
+			]
+		},
 		"Redis.redis-for-vscode": {
 			"onFileOpen": [
 				{
@@ -940,39 +956,12 @@
 				}
 			}
 		},
-		"stripe": {
-			"friendlyName": "Stripe CLI",
-			"windowsPath": "%USERPROFILE%\\scoop\\shims\\stripe.exe",
-			"recommendations": {
-				"stripe.vscode-stripe": {
-					"name": "Stripe"
-				}
-			}
-		},
 		"mongo": {
 			"friendlyName": "Mongo",
 			"windowsPath": "%ProgramFiles%\\MongoDB\\Server\\3.6\\bin\\mongod.exe",
 			"recommendations": {
 				"ms-azuretools.vscode-cosmosdb": {
 					"name": "Azure Databases"
-				}
-			}
-		},
-		"mongodb compass": {
-			"friendlyName": "MongoDB Compass",
-			"windowsPath": "%ProgramFiles%\\MongoDB Compass",
-			"recommendations": {
-				"mongodb.mongodb-vscode": {
-					"name": "MongoDB for VS Code"
-				}
-			}
-		},
-		"mongodb": {
-			"friendlyName": "MongoDB",
-			"windowsPath": "%ProgramFiles%\\MongoDB",
-			"recommendations": {
-				"mongodb.mongodb-vscode": {
-					"name": "MongoDB for VS Code"
 				}
 			}
 		},
@@ -1754,12 +1743,12 @@
 		"companyName": "Microsoft"
 	},
 	"appCenter": {
-		"win32-x64": "appcenter://code-insiders?aid=f047834f-d0e1-4aef-8870-5805ee483b2d",
-		"win32-arm64": "appcenter://code-insiders?aid=fb1c1670-432e-43dc-a88e-8c5ed7293213",
-		"linux-x64": "appcenter://code-insiders?aid=a04472a4-f4ea-4854-bf12-95bb0f2dd01a",
-		"darwin": "appcenter://code-insiders?aid=5e4c15d3-0a3c-4c3b-a294-2a40850616a2",
-		"darwin-arm64": "appcenter://code-insiders?aid=d6599f8f-6aee-4013-b47c-1e1269faa19a",
-		"darwin-universal": "appcenter://code-insiders?aid=9198980f-302c-4143-9ddf-29914b57be2e"
+		"win32-x64": "appcenter://code?aid=a4e3233c-699c-46ec-b4f4-9c2a77254662",
+		"win32-arm64": "appcenter://code?aid=3712d786-7cc8-4f11-8b08-cc12eab6d4f7",
+		"linux-x64": "appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171",
+		"darwin": "appcenter://code?aid=860d6632-f65b-490b-85a8-3e72944f7774",
+		"darwin-arm64": "appcenter://code?aid=be71415d-3893-4ae5-b453-e537b9668a10",
+		"darwin-universal": "appcenter://code?aid=de75e3cc-e22f-4f42-a03f-1409c21d8af8"
 	},
 	"enableTelemetry": true,
 	"aiConfig": {
@@ -1778,7 +1767,7 @@
 	],
 	"documentationUrl": "https://go.microsoft.com/fwlink/?LinkID=533484#vscode",
 	"serverDocumentationUrl": "https://aka.ms/vscode-server-doc",
-	"releaseNotesUrl": "https://go.microsoft.com/fwlink/?LinkId=724002",
+	"releaseNotesUrl": "https://go.microsoft.com/fwlink/?LinkID=533483#vscode",
 	"keyboardShortcutsUrlMac": "https://go.microsoft.com/fwlink/?linkid=832143",
 	"keyboardShortcutsUrlLinux": "https://go.microsoft.com/fwlink/?linkid=832144",
 	"keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
@@ -1789,7 +1778,7 @@
 	"requestFeatureUrl": "https://go.microsoft.com/fwlink/?LinkID=533482",
 	"reportIssueUrl": "https://github.com/Microsoft/vscode/issues/new",
 	"reportMarketplaceIssueUrl": "https://github.com/microsoft/vsmarketplace/issues/new",
-	"licenseUrl": "https://go.microsoft.com/fwlink/?LinkID=761088",
+	"licenseUrl": "https://go.microsoft.com/fwlink/?LinkID=533485",
 	"serverLicenseUrl": "https://aka.ms/vscode-server-license",
 	"privacyStatementUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
 	"showTelemetryOptOut": true,
@@ -1837,7 +1826,8 @@
 	],
 	"extensionsEnabledWithApiProposalVersion": [
 		"GitHub.copilot-chat",
-		"ms-vscode.vscode-commander"
+		"ms-vscode.vscode-commander",
+		"ms-vscode.vscode-copilot-vision"
 	],
 	"extensionEnabledApiProposals": {
 		"ms-azuretools.vscode-dev-azurecloudshell": [
@@ -2005,14 +1995,10 @@
 			"treeViewMarkdownMessage"
 		],
 		"GitHub.copilot": [
-			"inlineCompletionsAdditions",
-			"interactive",
-			"terminalDataWriteEvent"
+			"inlineCompletionsAdditions"
 		],
 		"GitHub.copilot-nightly": [
-			"inlineCompletionsAdditions",
-			"interactive",
-			"terminalDataWriteEvent"
+			"inlineCompletionsAdditions"
 		],
 		"GitHub.copilot-chat": [
 			"interactive",
@@ -2020,14 +2006,14 @@
 			"terminalExecuteCommandEvent",
 			"terminalSelection",
 			"terminalQuickFixProvider",
-			"chatProvider",
 			"chatParticipantAdditions",
 			"defaultChatParticipant",
 			"embeddings",
+			"chatEditing",
+			"chatProvider",
 			"mappedEditsProvider",
 			"aiRelatedInformation",
 			"aiSettingsSearch",
-			"chatEditing",
 			"codeActionAI",
 			"findTextInFiles",
 			"findTextInFiles2",
@@ -2128,6 +2114,7 @@
 			"terminalDataWriteEvent",
 			"chatParticipantAdditions"
 		],
+		"vscjava.vscode-java-pack": [],
 		"ms-dotnettools.csdevkit": [
 			"inlineCompletionsAdditions"
 		],
@@ -2146,19 +2133,15 @@
 			"chatParticipantAdditions",
 			"languageModelSystem"
 		],
+		"ms-toolsai.datawrangler": [],
+		"ms-vscode.vscode-commander": [],
+		"ms-vscode.vscode-websearchforcopilot": [],
 		"ms-vscode.vscode-copilot-vision": [
 			"chatReferenceBinaryData",
 			"codeActionAI"
 		],
-		"lramos15.model-playground": [
-			"chatProvider"
-		],
 		"ms-autodev.vscode-autodev": [
 			"chatParticipantAdditions"
-		],
-		"codetrek.haystack-search": [
-			"fileSearchProvider",
-			"textSearchProvider2"
 		],
 		"vscjava.vscode-java-upgrade": [
 			"chatParticipantAdditions"
@@ -2364,7 +2347,6 @@
 	],
 	"trustedExtensionAuthAccess": {
 		"github": [
-			"vscode.git",
 			"vscode.github",
 			"github.remotehub",
 			"ms-vscode.remote-server",
@@ -2376,7 +2358,6 @@
 			"ms-azuretools.vscode-azure-github-copilot"
 		],
 		"github-enterprise": [
-			"vscode.git",
 			"vscode.github",
 			"github.remotehub",
 			"ms-vscode.remote-server",
@@ -2388,7 +2369,6 @@
 			"ms-azuretools.vscode-azure-github-copilot"
 		],
 		"microsoft": [
-			"vscode.git",
 			"github.copilot-chat",
 			"ms-vscode.azure-repos",
 			"ms-vscode.remote-server",
@@ -2401,7 +2381,6 @@
 			"ms-toolsai.vscode-ai-remote"
 		],
 		"microsoft-sovereign-cloud": [
-			"vscode.git",
 			"ms-vscode.azure-repos",
 			"ms-vscode.remote-server",
 			"ms-vsliveshare.vsliveshare",
@@ -2435,10 +2414,10 @@
 		"clientId": "aebc6443-996d-45c2-90f0-388ff96faa56"
 	},
 	"configurationSync.store": {
-		"url": "https://vscode-sync-insiders.trafficmanager.net/",
+		"url": "https://vscode-sync.trafficmanager.net/",
 		"stableUrl": "https://vscode-sync.trafficmanager.net/",
 		"insidersUrl": "https://vscode-sync-insiders.trafficmanager.net/",
-		"canSwitch": true,
+		"canSwitch": false,
 		"authenticationProviders": {
 			"github": {
 				"scopes": [
@@ -2455,7 +2434,6 @@
 			}
 		}
 	},
-	"enableSyncingProfiles": true,
 	"editSessions.store": {
 		"url": "https://vscode-sync.trafficmanager.net/",
 		"authenticationProviders": {
@@ -2604,10 +2582,10 @@
 	},
 	"win32ContextMenu": {
 		"x64": {
-			"clsid": "799F4F7E-5934-4001-A74C-E207F44F05B8"
+			"clsid": "1C6DF0C0-192A-4451-BE36-6A59A86A692E"
 		},
 		"arm64": {
-			"clsid": "7D34756D-32DD-4EE6-B99F-2691C0DAD875"
+			"clsid": "F5EA5883-1DA8-4A05-864A-D5DE2D2B2854"
 		}
 	},
 	"builtInExtensions": [
@@ -2660,16 +2638,16 @@
 			}
 		}
 	],
-	"commit": "34769c5d17df269aed44407eb1a1c0e6362e2d79",
-	"date": "2025-08-04T21:43:35.566Z",
+	"commit": "360a4e4fd251bfce169a4ddf857c7d25d1ad40da",
+	"date": "2025-08-12T16:25:40.542Z",
 	"checksums": {
-		"vs/base/parts/sandbox/electron-browser/preload.js": "FsEVdLzx5Rz+e1+coNcB98796ZzMXB1OiiqsZODKSco",
-		"vs/workbench/workbench.desktop.main.js": "k61fjrqZ1bSJvUuQ1mCX7qechsZuX3OAoBVwXwcDKnA",
-		"vs/workbench/workbench.desktop.main.css": "gysX9MO41V2NauUUe+gZRhh0De+S/y31stNaqMOjfRo",
-		"vs/workbench/api/node/extensionHostProcess.js": "rO7K63+lP71IWdYvt5owcJeml/5gu8junMPWb6VafkA",
+		"vs/base/parts/sandbox/electron-browser/preload.js": "ir+5Hy/dNqGxLuDGlvxKIyoTnPrtHHEOSRX8p2/TEng",
+		"vs/workbench/workbench.desktop.main.js": "v65TmER5iF5YtgZuBJ1wIPhhnv66cF/e1oEqrvxy+5E",
+		"vs/workbench/workbench.desktop.main.css": "pBY5tN2ubtM0hajBx1SoPns9Fckl/+kQDhaj9ZMVUlg",
+		"vs/workbench/api/node/extensionHostProcess.js": "5WrXcMnQ3BZxw/VVabYyGFCGlV2P/McYJgpi+vmKQ34",
 		"vs/code/electron-browser/workbench/workbench.html": "e+u7suTqTA+xoGUabJ3p7qVjdIpOgqUtSJOPvyoWZZg",
-		"vs/code/electron-browser/workbench/workbench.js": "+VVSZTbn2RQEyskYxxPUJy3tyAEqbPHYQAYmNtvVmw4"
+		"vs/code/electron-browser/workbench/workbench.js": "DekORREhkUpvaJOL2OhgP/o+4ENlLjoFDTlxUqOzsv0"
 	},
-	"version": "1.103.0",
+	"version": "1.103.1",
 	"darwinUniversalAssetId": "darwin-universal"
 }
