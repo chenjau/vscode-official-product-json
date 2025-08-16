@@ -2670,6 +2670,6 @@
 		"vs/code/electron-browser/workbench/workbench.html": "e+u7suTqTA+xoGUabJ3p7qVjdIpOgqUtSJOPvyoWZZg",
 		"vs/code/electron-browser/workbench/workbench.js": "+VVSZTbn2RQEyskYxxPUJy3tyAEqbPHYQAYmNtvVmw4"
 	},
-	"version": "1.103.0-insider",
+	"version": "1.103.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
