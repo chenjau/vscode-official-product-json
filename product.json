@@ -73,7 +73,7 @@
 		]
 	},
 	"mcpGallery": {
-		"serviceUrl": "https://api.mcp.github.com/2025-09-15",
+		"serviceUrl": "https://api.mcp.github.com",
 		"itemWebUrl": "https://github.com/mcp/{name}",
 		"publisherUrl": "https://github.com/{name}",
 		"supportUrl": "https://support.github.com",
@@ -95,6 +95,7 @@
 			"id": "github",
 			"enterpriseProviderId": "github-enterprise",
 			"enterpriseProviderConfig": "github.copilot.advanced.authProvider",
+			"enterpriseProviderUriSetting": "github-enterprise.uri",
 			"scopes": [
 				"user:email"
 			]
@@ -109,7 +110,8 @@
 	],
 	"trustedExtensionPublishers": [
 		"microsoft",
-		"github"
+		"github",
+		"openai"
 	],
 	"extensionRecommendations": {
 		"ms-dotnettools.csdevkit": {
@@ -1904,7 +1906,8 @@
 			"terminalShellEnv"
 		],
 		"ms-python.vscode-python-envs": [
-			"terminalShellEnv"
+			"terminalShellEnv",
+			"terminalDataWriteEvent"
 		],
 		"ms-dotnettools.dotnet-interactive-vscode": [
 			"notebookMessaging"
@@ -2012,13 +2015,14 @@
 			"contribMultiDiffEditorMenus",
 			"contribShareMenu",
 			"diffCommand",
-			"languageModelDataPart",
 			"languageModelToolResultAudience",
+			"markdownAlertSyntax",
 			"quickDiffProvider",
 			"remoteCodingAgents",
 			"shareProvider",
 			"tabInputTextMerge",
 			"tokenInformation",
+			"treeItemMarkdownLabel",
 			"treeViewMarkdownMessage"
 		],
 		"GitHub.copilot": [
@@ -2068,7 +2072,6 @@
 			"chatReferenceBinaryData",
 			"languageModelSystem",
 			"languageModelCapabilities",
-			"languageModelDataPart",
 			"languageModelThinkingPart",
 			"chatStatusItem",
 			"taskProblemMatcherStatus",
@@ -2182,6 +2185,13 @@
 		],
 		"Microsoft.foundry-local-chat": [
 			"chatProvider"
+		],
+		"ms-wmcp.windows-mcp-server-extension": [
+			"mcpToolDefinitions"
+		],
+		"openai.chatgpt": [
+			"languageModelProxy",
+			"chatSessionsProvider"
 		]
 	},
 	"tasConfig": {
@@ -2380,7 +2390,8 @@
 		"https://portal.azure.com",
 		"https://raw.githubusercontent.com",
 		"https://private-user-images.githubusercontent.com",
-		"https://avatars.githubusercontent.com"
+		"https://avatars.githubusercontent.com",
+		"https://auth.openai.com"
 	],
 	"trustedExtensionAuthAccess": {
 		"github": [
@@ -2439,6 +2450,7 @@
 		"vscode.microsoft-authentication",
 		"github.vscode-pull-request-github"
 	],
+	"authClientIdMetadataUrl": "https://vscode.dev/oauth/client-metadata.json",
 	"inheritAuthAccountPreference": {
 		"github.copilot": [
 			"github.copilot-chat"
@@ -2693,16 +2705,16 @@
 			}
 		}
 	],
-	"commit": "7d842fb85a0275a4a8e4d7e040d2625abbf7f084",
-	"date": "2025-10-14T22:33:36.618Z",
+	"commit": "ac4cbdf48759c7d8c3eb91ffe6bb04316e263c57",
+	"date": "2025-11-11T16:02:25.943Z",
 	"checksums": {
-		"vs/base/parts/sandbox/electron-browser/preload.js": "qAqeGY+Nf/PGqH4sVXyr7aErR2Kn3sAB40WsHDIwsWU",
-		"vs/workbench/workbench.desktop.main.js": "u1/iVkuqsxmbUup6h+e/FRii2RJsHmuwz4mvLQ77CWc",
-		"vs/workbench/workbench.desktop.main.css": "wGRdtcnmi+74TG270z4ztDVrPZskw1JhLgLdT5nA9Mc",
-		"vs/workbench/api/node/extensionHostProcess.js": "11d7SQfILsWQIIthZHcehxLxItb7MfVMZIybiq+DfyA",
+		"vs/base/parts/sandbox/electron-browser/preload.js": "5ax9tHIID1uTlhh1tmY39SkCkQnA22I53KMplkQdFcU",
+		"vs/workbench/workbench.desktop.main.js": "iJ4vgvyzP6EbmUZj/puHIAe5Zdj73qqbXpsDNaWD/hQ",
+		"vs/workbench/workbench.desktop.main.css": "BvyGBH12G2ScPCPXSnSCJHvLw4kOCzpCnOmCBFWCkNE",
+		"vs/workbench/api/node/extensionHostProcess.js": "pBQCCD3H6YZmKOa5V2Pb64to7vKWjU1ei14cEOPmRzQ",
 		"vs/code/electron-browser/workbench/workbench.html": "IXs56lnAOq4GkszLUTUuuJyCTmeRFMqF0kDm+OuRpPQ",
-		"vs/code/electron-browser/workbench/workbench.js": "Kg264eWm28mvgtoaNf2SDylNiAg2ri5bOPV8wZSgwFc"
+		"vs/code/electron-browser/workbench/workbench.js": "nKBTfWyr1v+5CeHomZW9bdAUuksnE54JBiIQBK3TsAE"
 	},
-	"version": "1.105.1",
+	"version": "1.106.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
