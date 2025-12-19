@@ -2669,6 +2669,22 @@
 			"name": "codex",
 			"description": "Codex is OpenAI's coding agent that helps you write, review, and ship code faster.",
 			"postInstallCommand": "chatgpt.newCodexPanel"
+		},
+		{
+			"extensionId": "GitHub.copilot-chat",
+			"extensionName": "GitHub Copilot Chat",
+			"displayName": "Background Agent",
+			"name": "cli",
+			"description": "Delegate tasks to a background agent.",
+			"postInstallCommand": "workbench.action.chat.openNewSessionSidebar.copilotcli"
+		},
+		{
+			"extensionId": "GitHub.copilot-chat",
+			"extensionName": "GitHub Copilot Chat",
+			"displayName": "Cloud Agent",
+			"name": "cloud",
+			"description": "Delegate tasks to the GitHub Copilot Cloud Agent. The agent works asynchronously in the cloud to implement changes, iterates via chat, and can create or update pull requests as needed.",
+			"postInstallCommand": "workbench.action.chat.openNewSessionSidebar.copilot-cloud-agent"
 		}
 	],
 	"builtInExtensions": [
@@ -2721,16 +2737,16 @@
 			}
 		}
 	],
-	"commit": "618725e67565b290ba4da6fe2d29f8fa1d4e3622",
-	"date": "2025-12-10T07:43:47.883Z",
+	"commit": "994fd12f8d3a5aa16f17d42c041e5809167e845a",
+	"date": "2025-12-17T14:15:14.850Z",
 	"checksums": {
-		"vs/base/parts/sandbox/electron-browser/preload.js": "11t0Tb9nMA0vDiGluViP9srMa0XQ9suq8wPRKtRwyfo",
-		"vs/workbench/workbench.desktop.main.js": "OyiMwSEofnQ7iLHL4B4VJwriCiEu4nnLpfIwggc7Veg",
-		"vs/workbench/workbench.desktop.main.css": "ti67DiTGogpaNh2p+rGAP0tbcBC1Y7CLkEeqS4JTjRI",
-		"vs/workbench/api/node/extensionHostProcess.js": "gODTJ/rPn4WHdP4gG4FXwtQp45d+jQ5f91uGoMgXSwM",
+		"vs/base/parts/sandbox/electron-browser/preload.js": "LlhR1WulrIi82otGYehr9S9ftptliSKnmoizhCWRN2g",
+		"vs/workbench/workbench.desktop.main.js": "EuKNGEuWPlYDrvSwwDCYAfCrSWR8S//QbnIHJM1ncrM",
+		"vs/workbench/workbench.desktop.main.css": "YGU0o1iPYWF4ce1P12nh9D7wBOnCD15esIcF5bgj9FI",
+		"vs/workbench/api/node/extensionHostProcess.js": "uFQXP30ShyJ2MfCXzvg+DcWAtcOnAfR4yWXbnT8WyiM",
 		"vs/code/electron-browser/workbench/workbench.html": "IXs56lnAOq4GkszLUTUuuJyCTmeRFMqF0kDm+OuRpPQ",
-		"vs/code/electron-browser/workbench/workbench.js": "oK+zWGd3tKL8aW2WLCEW6Lnd4Y0e9dgGFkAz1mejgds"
+		"vs/code/electron-browser/workbench/workbench.js": "pJPOT9LC00PoyYAbdQN5z68r+fEb5rTRnslVSRSOjhA"
 	},
-	"version": "1.107.0",
+	"version": "1.107.1",
 	"darwinUniversalAssetId": "darwin-universal"
 }
