@@ -1445,6 +1445,10 @@
 				"startCommand": "remote-tunnels.connectCurrentWindowToTunnel",
 				"priority": 0
 			}
+		},
+		"amlext": {
+			"friendlyName": "Azure Machine Learning",
+			"extensionId": "ms-toolsai.vscode-ai-remote"
 		}
 	},
 	"commandPaletteSuggestedCommandIds": [
@@ -2033,6 +2037,7 @@
 			"quickDiffProvider",
 			"remoteCodingAgents",
 			"shareProvider",
+			"tabInputMultiDiff",
 			"tabInputTextMerge",
 			"tokenInformation",
 			"treeItemMarkdownLabel",
@@ -2737,16 +2742,16 @@
 			}
 		}
 	],
-	"commit": "994fd12f8d3a5aa16f17d42c041e5809167e845a",
-	"date": "2025-12-17T14:15:14.850Z",
+	"commit": "585eba7c0c34fd6b30faac7c62a42050bfbc0086",
+	"date": "2026-01-14T14:55:44.241Z",
 	"checksums": {
-		"vs/base/parts/sandbox/electron-browser/preload.js": "LlhR1WulrIi82otGYehr9S9ftptliSKnmoizhCWRN2g",
-		"vs/workbench/workbench.desktop.main.js": "EuKNGEuWPlYDrvSwwDCYAfCrSWR8S//QbnIHJM1ncrM",
-		"vs/workbench/workbench.desktop.main.css": "YGU0o1iPYWF4ce1P12nh9D7wBOnCD15esIcF5bgj9FI",
-		"vs/workbench/api/node/extensionHostProcess.js": "uFQXP30ShyJ2MfCXzvg+DcWAtcOnAfR4yWXbnT8WyiM",
+		"vs/base/parts/sandbox/electron-browser/preload.js": "qMEIwPwwoHi4tKnzhLy9Ql3JUDFGpeWoxpdri7o861U",
+		"vs/workbench/workbench.desktop.main.js": "FSgu5hGC96lmBM7Uroq61jlFM0xTgUWU+NXvpFulITU",
+		"vs/workbench/workbench.desktop.main.css": "doZJGtLHJ0zFXTp6zw2pLJZhH4M5nTcedBYWbQ04Hi4",
+		"vs/workbench/api/node/extensionHostProcess.js": "w6q3Pdo7bi6TR3qVC3qs8J6m6l3T/K+NJbW3kHT6OJA",
 		"vs/code/electron-browser/workbench/workbench.html": "IXs56lnAOq4GkszLUTUuuJyCTmeRFMqF0kDm+OuRpPQ",
-		"vs/code/electron-browser/workbench/workbench.js": "pJPOT9LC00PoyYAbdQN5z68r+fEb5rTRnslVSRSOjhA"
+		"vs/code/electron-browser/workbench/workbench.js": "fuoI31tpLPutNNr0XbmVebX1WtIdFxD/q8ymLo4qC7w"
 	},
-	"version": "1.107.1",
+	"version": "1.108.1",
 	"darwinUniversalAssetId": "darwin-universal"
 }
