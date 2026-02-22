@@ -2098,7 +2098,8 @@
 			"chatPromptFiles",
 			"mcpServerDefinitions",
 			"tabInputMultiDiff",
-			"workspaceTrust"
+			"workspaceTrust",
+			"chatHooks"
 		],
 		"GitHub.remotehub": [
 			"contribRemoteHelp",
@@ -2742,16 +2743,16 @@
 			}
 		}
 	],
-	"commit": "591199df409fbf59b4b52d5ad4ee0470152a9b31",
-	"date": "2026-02-10T20:18:23.520Z",
+	"commit": "072586267e68ece9a47aa43f8c108e0dcbf44622",
+	"date": "2026-02-19T19:43:32.382Z",
 	"checksums": {
-		"vs/base/parts/sandbox/electron-browser/preload.js": "fBk9anmJWF1W/J5TGB8HdYb3thvD4l9cbieupMQeRdc",
-		"vs/workbench/workbench.desktop.main.js": "fIbRQUIMQxaYVEiYb83tL9SW0aMHYjrTKc8fhY8usg8",
-		"vs/workbench/workbench.desktop.main.css": "A2Rt7hwtcgFuO8fyMhsuJ0gEB4FriLt1M/Z26RJUR08",
-		"vs/workbench/api/node/extensionHostProcess.js": "GQTyb5UCQAZRj00rf9xPOp5IIhfpboz4EJ6GI39V4ac",
+		"vs/base/parts/sandbox/electron-browser/preload.js": "mUCSrgf8LWE2VMWQbK9mj9YJWwGw1OrGH1Ps3+vm6+g",
+		"vs/workbench/workbench.desktop.main.js": "KqDpaZ12XT1MdoozDOkcaYe5X3eFvEC1tB/6XWuyCHs",
+		"vs/workbench/workbench.desktop.main.css": "DuDGTP1hlkE1ec6hDquNFpOqEm/1FbxSCgH0wgWYBmc",
+		"vs/workbench/api/node/extensionHostProcess.js": "jUzAJas5j42mksNtqsVoKS07PdJVtwarRFiidfFNLGw",
 		"vs/code/electron-browser/workbench/workbench.html": "IXs56lnAOq4GkszLUTUuuJyCTmeRFMqF0kDm+OuRpPQ",
-		"vs/code/electron-browser/workbench/workbench.js": "sEWDmwfCoIZN3Q3oF6Fxxj+wvavqGEko8M93aTSYzyU"
+		"vs/code/electron-browser/workbench/workbench.js": "r5MSGJGqYssoVJvT6+T2YiD4bElIub8jE6AqxucwdTk"
 	},
-	"version": "1.109.2",
+	"version": "1.109.5",
 	"darwinUniversalAssetId": "darwin-universal"
 }
