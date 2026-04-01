@@ -49,6 +49,7 @@
 		"nameShort": "Sessions",
 		"nameLong": "Visual Studio Code Sessions",
 		"applicationName": "sessions",
+		"telemetryAppName": "sessions",
 		"win32AppUserModelId": "Microsoft.VisualStudioCodeSessions",
 		"win32MutexName": "vscodesessions",
 		"win32RegValueName": "VSCodeSessions",
@@ -2120,9 +2121,11 @@
 			"taskExecutionTerminal",
 			"dataChannels",
 			"chatSessionsProvider",
+			"chatSessionCustomizationProvider",
 			"devDeviceId",
 			"contribEditorContentMenu",
 			"tokenInformation",
+			"toolInvocationApproveCombination",
 			"chatPromptFiles",
 			"mcpServerDefinitions",
 			"tabInputMultiDiff",
@@ -2229,6 +2232,10 @@
 		],
 		"ms-autodev.vscode-autodev": [
 			"chatParticipantAdditions"
+		],
+		"vscjava.migrate-java-to-azure": [
+			"chatParticipantAdditions",
+			"chatParticipantPrivate"
 		],
 		"vscjava.vscode-java-upgrade": [
 			"chatParticipantAdditions",
@@ -2688,6 +2695,10 @@
 		"github.copilot.chat.reviewAgent.enabled": {
 			"name": "CopilotReviewAgent",
 			"minimumVersion": "1.104"
+		},
+		"github.copilot.chat.claudeAgent.enabled": {
+			"name": "Claude3PIntegration",
+			"minimumVersion": "1.113"
 		}
 	},
 	"win32ContextMenu": {
@@ -2774,20 +2785,20 @@
 			}
 		}
 	],
-	"commit": "07ff9d6178ede9a1bd12ad3399074d726ebe6e43",
-	"date": "2026-03-17T18:09:23Z",
+	"commit": "e7fb5e96c0730b9deb70b33781f98e2f35975036",
+	"date": "2026-04-01T09:27:11Z",
 	"checksums": {
 		"vs/base/parts/sandbox/electron-browser/preload.js": "pEnkU8mcIZ0DvnCkVCVdSC12xeGMu3MUXKKluNx/Lnk",
-		"vs/workbench/workbench.desktop.main.js": "7vcn8GR8o5klt0yrMP8igmjKP9jPpvJyCp3kJM5REJM",
-		"vs/workbench/workbench.desktop.main.css": "Jclr1nXHt4uPWCcdIlHfzj+7gSMUpIicu0o2zvJindM",
-		"vs/workbench/api/node/extensionHostProcess.js": "CpJrrTcZFg09vLp7+5uRtcj1Z0MWby09USZ/wdW7v58",
+		"vs/workbench/workbench.desktop.main.js": "C3WnzbLr3E2VPGFxCMSikqYm7Qr7YnXjM88kFSiBIXU",
+		"vs/workbench/workbench.desktop.main.css": "flxHapfgpM7qO28jrOWjLtpHhUWOjdeU+xfSWGac3g0",
+		"vs/workbench/api/node/extensionHostProcess.js": "4Wj2Z1zVUkpMJ0KvHRH98a8/rhWsUzBegf63+IMzq+4",
 		"vs/code/electron-browser/workbench/workbench.html": "y/1rUTZiVPFlnCpp+xudt09z5R/r1OulxFGN0tSQw90",
-		"vs/code/electron-browser/workbench/workbench.js": "dPiTneIPzmc8qEoKhd3GQYNOwWninpVY2cYofYtXdjs",
-		"vs/sessions/sessions.desktop.main.js": "FZJz6zPxDVgQCWLHyfy1hpydN0yVRrUiCvHNT+dxZa4",
-		"vs/sessions/sessions.desktop.main.css": "0b70eKMkYBCzchat2ARDMf/tDdvS2Qut9bQgXsO8ywQ",
+		"vs/code/electron-browser/workbench/workbench.js": "aZByhNH0IbS7DgGwKSM5mR+ovcFfImboNVO/lvZ2pZI",
+		"vs/sessions/sessions.desktop.main.js": "hBrrJLC/33rJNHnewKulqeyOEVkNqNzmUVSsLnlov6o",
+		"vs/sessions/sessions.desktop.main.css": "7rx7oFM9bHJ7Cw7srYVGcFUhskVdrNlnsfb6nbUZAEY",
 		"vs/sessions/electron-browser/sessions.html": "jVbR4zXGjojgXGd9jywXFQUssPI/EhZrxsk+VVhSeGM",
-		"vs/sessions/electron-browser/sessions.js": "lxnxP+pscmHlL0/jJW5MpBulUmPFN0JvZ5svIU+6rvo"
+		"vs/sessions/electron-browser/sessions.js": "AoQMrAkgwbsFRb8SkyC8mcELbNkDEJ2LaUoaFecGH0k"
 	},
-	"version": "1.112.0",
+	"version": "1.114.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
