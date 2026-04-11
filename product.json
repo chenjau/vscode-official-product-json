@@ -46,18 +46,18 @@
 	"webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/{{quality}}/{{commit}}/out/vs/workbench/contrib/webview/browser/pre/",
 	"quality": "stable",
 	"embedded": {
-		"nameShort": "Sessions",
-		"nameLong": "Visual Studio Code Sessions",
-		"applicationName": "sessions",
-		"telemetryAppName": "sessions",
-		"win32AppUserModelId": "Microsoft.VisualStudioCodeSessions",
-		"win32MutexName": "vscodesessions",
-		"win32RegValueName": "VSCodeSessions",
-		"win32NameVersion": "Microsoft Visual Studio Code Sessions",
+		"nameShort": "Agents",
+		"nameLong": "Visual Studio Code Agents",
+		"applicationName": "agents",
+		"telemetryAppName": "agents",
+		"win32AppUserModelId": "Microsoft.VisualStudioCodeAgents",
+		"win32MutexName": "vscodeagents",
+		"win32RegValueName": "VSCodeAgents",
+		"win32NameVersion": "Microsoft Visual Studio Code Agents",
 		"win32VersionedUpdate": true,
-		"darwinBundleIdentifier": "com.microsoft.VSCodeSessions",
-		"dataFolderName": ".vscode-sessions",
-		"urlProtocol": "vscode-sessions",
+		"darwinBundleIdentifier": "com.microsoft.VSCodeAgents",
+		"dataFolderName": ".vscode-agents",
+		"urlProtocol": "vscode-agents",
 		"inheritAuthAccountPreference": {
 			"github.copilot": [
 				"github.copilot-chat"
@@ -2686,19 +2686,27 @@
 	"extensionConfigurationPolicy": {
 		"github.copilot.nextEditSuggestions.enabled": {
 			"name": "CopilotNextEditSuggestions",
-			"minimumVersion": "1.99"
+			"minimumVersion": "1.99",
+			"category": "InteractiveSession",
+			"description": "Whether to enable next edit suggestions (NES). NES can propose a next edit based on your recent changes."
 		},
 		"github.copilot.chat.reviewSelection.enabled": {
 			"name": "CopilotReviewSelection",
-			"minimumVersion": "1.104"
+			"minimumVersion": "1.104",
+			"category": "InteractiveSession",
+			"description": "Enables code review on current selection."
 		},
 		"github.copilot.chat.reviewAgent.enabled": {
 			"name": "CopilotReviewAgent",
-			"minimumVersion": "1.104"
+			"minimumVersion": "1.104",
+			"category": "InteractiveSession",
+			"description": "Enables the code review agent."
 		},
 		"github.copilot.chat.claudeAgent.enabled": {
 			"name": "Claude3PIntegration",
-			"minimumVersion": "1.113"
+			"minimumVersion": "1.113",
+			"category": "InteractiveSession",
+			"description": "Enable Claude Agent sessions in VS Code. Start and resume agentic coding sessions powered by Anthropic Claude Agent SDK directly in the editor. Uses your existing Copilot subscription."
 		}
 	},
 	"win32ContextMenu": {
@@ -2785,20 +2793,20 @@
 			}
 		}
 	],
-	"commit": "e7fb5e96c0730b9deb70b33781f98e2f35975036",
-	"date": "2026-04-01T09:27:11Z",
+	"commit": "41dd792b5e652393e7787322889ed5fdc58bd75b",
+	"date": "2026-04-07T22:04:57Z",
 	"checksums": {
 		"vs/base/parts/sandbox/electron-browser/preload.js": "pEnkU8mcIZ0DvnCkVCVdSC12xeGMu3MUXKKluNx/Lnk",
-		"vs/workbench/workbench.desktop.main.js": "C3WnzbLr3E2VPGFxCMSikqYm7Qr7YnXjM88kFSiBIXU",
-		"vs/workbench/workbench.desktop.main.css": "flxHapfgpM7qO28jrOWjLtpHhUWOjdeU+xfSWGac3g0",
-		"vs/workbench/api/node/extensionHostProcess.js": "4Wj2Z1zVUkpMJ0KvHRH98a8/rhWsUzBegf63+IMzq+4",
+		"vs/workbench/workbench.desktop.main.js": "bY1Tjin8eAWWlyeq6UNaOmuIVHwSK3YgNAzGj4jAhMg",
+		"vs/workbench/workbench.desktop.main.css": "2An+KnfdfK1wDEA8Yq5/K4+jWwrsiGiX6qW2D1MlmBY",
+		"vs/workbench/api/node/extensionHostProcess.js": "sqDzlbwMArldUUh51VT2xy3Sz5clQWWfO8xyJmNVIr8",
 		"vs/code/electron-browser/workbench/workbench.html": "y/1rUTZiVPFlnCpp+xudt09z5R/r1OulxFGN0tSQw90",
-		"vs/code/electron-browser/workbench/workbench.js": "aZByhNH0IbS7DgGwKSM5mR+ovcFfImboNVO/lvZ2pZI",
-		"vs/sessions/sessions.desktop.main.js": "hBrrJLC/33rJNHnewKulqeyOEVkNqNzmUVSsLnlov6o",
-		"vs/sessions/sessions.desktop.main.css": "7rx7oFM9bHJ7Cw7srYVGcFUhskVdrNlnsfb6nbUZAEY",
+		"vs/code/electron-browser/workbench/workbench.js": "YjWzEXZW5u0b8jaPjSFuX8u0cwBI61R/0JrOBZ1DrWM",
+		"vs/sessions/sessions.desktop.main.js": "9BiEizCfrsXrpMq7io9hjpR1TLLRiYCYSxstUIulb/s",
+		"vs/sessions/sessions.desktop.main.css": "+a/hWOUHSQct4dM75U4Ghv2YsVGO+pecfDybidUuffs",
 		"vs/sessions/electron-browser/sessions.html": "jVbR4zXGjojgXGd9jywXFQUssPI/EhZrxsk+VVhSeGM",
-		"vs/sessions/electron-browser/sessions.js": "AoQMrAkgwbsFRb8SkyC8mcELbNkDEJ2LaUoaFecGH0k"
+		"vs/sessions/electron-browser/sessions.js": "5OyfaCiq43AJWBqz/wkcJy2o2wK5SQQ3aE1cfhMwOKI"
 	},
-	"version": "1.114.0",
+	"version": "1.115.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
