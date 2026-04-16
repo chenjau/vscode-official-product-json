@@ -16,6 +16,7 @@
 	"win32VersionedUpdate": true,
 	"darwinCredits": "resources/darwin/Credits.rtf",
 	"darwinBundleIdentifier": "com.microsoft.VSCode",
+	"darwinSharedKeychainServiceName": "com.microsoft.VSCode.shared-secrets",
 	"darwinProfileUUID": "EBAE60D6-C8A2-4419-92FF-24F8AD5077AB",
 	"darwinProfilePayloadUUID": "C6B5723A-6539-4F31-8A4E-3CC96E51F48C",
 	"darwinExecutable": "VSCode",
@@ -116,6 +117,71 @@
 	"extensionsForceVersionByQuality": [
 		"github.copilot-chat",
 		"github.copilot"
+	],
+	"builtInExtensions": [
+		{
+			"name": "ms-vscode.js-debug-companion",
+			"version": "1.1.3",
+			"sha256": "7380a890787452f14b2db7835dfa94de538caf358ebc263f9d46dd68ac52de93",
+			"repo": "https://github.com/microsoft/vscode-js-debug-companion",
+			"metadata": {
+				"id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "ms-vscode.js-debug",
+			"version": "1.112.0",
+			"sha256": "c24322931434940938f8cf76ebc3dac1e95a5539b9625b165b6672d7f7eafea8",
+			"repo": "https://github.com/microsoft/vscode-js-debug",
+			"metadata": {
+				"id": "25629058-ddac-4e17-abba-74678e126c5d",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "ms-vscode.vscode-js-profile-table",
+			"version": "1.0.10",
+			"sha256": "7361748ddf9fd09d8a2ed1f2a2d7376a2cf9aae708692820b799708385c38e08",
+			"repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
+			"metadata": {
+				"id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+				"publisherId": {
+					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		},
+		{
+			"name": "TypeScriptTeam.jsts-chat-features",
+			"version": "0.0.2",
+			"sha256": "288d8bc26a6e3a752c0971bc93078736c3d818384b27989c1e05ec49a28e1c29",
+			"metadata": {
+				"id": "7d881d23-233c-448d-9700-cf11a0de79c2",
+				"publisherId": {
+					"publisherId": "4f0355d2-4a53-4ab1-a8ea-507f4a333a6f",
+					"publisherName": "ms-vscode",
+					"displayName": "Microsoft",
+					"flags": "verified"
+				},
+				"publisherDisplayName": "Microsoft"
+			}
+		}
 	],
 	"profileTemplatesUrl": "https://main.vscode-cdn.net/core/profile-templates.json",
 	"emergencyAlertUrl": "https://main.vscode-cdn.net/core/stable.json",
@@ -714,6 +780,125 @@
 			]
 		}
 	},
+	"onboardingKeymaps": [
+		{
+			"id": "vscode",
+			"label": "VS Code",
+			"description": "Default keyboard mapping"
+		},
+		{
+			"id": "sublime",
+			"label": "Sublime Text",
+			"extensionId": "ms-vscode.sublime-keybindings",
+			"description": "Keyboard mapping from Sublime Text"
+		},
+		{
+			"id": "intellij",
+			"label": "IntelliJ / JetBrains",
+			"extensionId": "k--kato.intellij-idea-keybindings",
+			"description": "Keyboard mapping from IntelliJ IDEA"
+		},
+		{
+			"id": "vim",
+			"label": "Vim",
+			"extensionId": "vscodevim.vim",
+			"description": "Vim modal editing"
+		},
+		{
+			"id": "eclipse",
+			"label": "Eclipse",
+			"extensionId": "alphabotsec.vscode-eclipse-keybindings",
+			"description": "Keyboard mapping from Eclipse"
+		},
+		{
+			"id": "notepadpp",
+			"label": "Notepad++",
+			"extensionId": "ms-vscode.notepadplusplus-keybindings",
+			"description": "Keyboard mapping from Notepad++"
+		}
+	],
+	"onboardingExtensions": [
+		{
+			"id": "ms-vscode-remote.remote-containers",
+			"name": "Dev Containers",
+			"publisher": "Microsoft",
+			"description": "Develop inside a container with a full-featured editor",
+			"icon": "remote-explorer"
+		},
+		{
+			"id": "ms-azuretools.vscode-docker",
+			"name": "Docker",
+			"publisher": "Microsoft",
+			"description": "Build, manage, and deploy containerized applications",
+			"icon": "package"
+		},
+		{
+			"id": "dbaeumer.vscode-eslint",
+			"name": "ESLint",
+			"publisher": "Microsoft",
+			"description": "Find and fix problems in your JavaScript code",
+			"icon": "lightbulb"
+		},
+		{
+			"id": "GitHub.vscode-pull-request-github",
+			"name": "GitHub Pull Requests",
+			"publisher": "GitHub",
+			"description": "Review and manage GitHub pull requests and issues",
+			"icon": "git-pull-request"
+		},
+		{
+			"id": "ms-python.python",
+			"name": "Python",
+			"publisher": "Microsoft",
+			"description": "Rich Python language support with IntelliSense and debugging",
+			"icon": "symbol-misc"
+		},
+		{
+			"id": "ms-vscode-remote.remote-ssh",
+			"name": "Remote - SSH",
+			"publisher": "Microsoft",
+			"description": "Open folders and files on a remote machine via SSH",
+			"icon": "remote"
+		}
+	],
+	"onboardingThemes": [
+		{
+			"id": "dark-2026",
+			"label": "Dark 2026",
+			"themeId": "Dark 2026",
+			"type": "dark"
+		},
+		{
+			"id": "hc-dark",
+			"label": "Dark High Contrast",
+			"themeId": "Default High Contrast",
+			"type": "hcDark"
+		},
+		{
+			"id": "solarized-dark",
+			"label": "Solarized Dark",
+			"themeId": "Solarized Dark",
+			"type": "dark"
+		},
+		{
+			"id": "light-2026",
+			"label": "Light 2026",
+			"themeId": "Light 2026",
+			"type": "light"
+		},
+		{
+			"id": "hc-light",
+			"label": "Light High Contrast",
+			"themeId": "Default High Contrast Light",
+			"type": "hcLight"
+		},
+		{
+			"id": "solarized-light",
+			"label": "Solarized Light",
+			"themeId": "Solarized Light",
+			"type": "light"
+		}
+	],
 	"keymapExtensionTips": [
 		"vscodevim.vim",
 		"ms-vscode.sublime-keybindings",
@@ -2743,70 +2928,23 @@
 			"postInstallCommand": "workbench.action.chat.openNewSessionSidebar.copilot-cloud-agent"
 		}
 	],
-	"builtInExtensions": [
-		{
-			"name": "ms-vscode.js-debug-companion",
-			"version": "1.1.3",
-			"sha256": "7380a890787452f14b2db7835dfa94de538caf358ebc263f9d46dd68ac52de93",
-			"repo": "https://github.com/microsoft/vscode-js-debug-companion",
-			"metadata": {
-				"id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
-				"publisherId": {
-					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
-					"publisherName": "ms-vscode",
-					"displayName": "Microsoft",
-					"flags": "verified"
-				},
-				"publisherDisplayName": "Microsoft"
-			}
-		},
-		{
-			"name": "ms-vscode.js-debug",
-			"version": "1.112.0",
-			"sha256": "c24322931434940938f8cf76ebc3dac1e95a5539b9625b165b6672d7f7eafea8",
-			"repo": "https://github.com/microsoft/vscode-js-debug",
-			"metadata": {
-				"id": "25629058-ddac-4e17-abba-74678e126c5d",
-				"publisherId": {
-					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
-					"publisherName": "ms-vscode",
-					"displayName": "Microsoft",
-					"flags": "verified"
-				},
-				"publisherDisplayName": "Microsoft"
-			}
-		},
-		{
-			"name": "ms-vscode.vscode-js-profile-table",
-			"version": "1.0.10",
-			"sha256": "7361748ddf9fd09d8a2ed1f2a2d7376a2cf9aae708692820b799708385c38e08",
-			"repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
-			"metadata": {
-				"id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
-				"publisherId": {
-					"publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
-					"publisherName": "ms-vscode",
-					"displayName": "Microsoft",
-					"flags": "verified"
-				},
-				"publisherDisplayName": "Microsoft"
-			}
-		}
+	"builtInExtensionsEnabledWithAutoUpdates": [
+		"GitHub.copilot-chat"
 	],
-	"commit": "41dd792b5e652393e7787322889ed5fdc58bd75b",
-	"date": "2026-04-07T22:04:57Z",
+	"commit": "560a9dba96f961efea7b1612916f89e5d5d4d679",
+	"date": "2026-04-15T00:28:13Z",
 	"checksums": {
 		"vs/base/parts/sandbox/electron-browser/preload.js": "pEnkU8mcIZ0DvnCkVCVdSC12xeGMu3MUXKKluNx/Lnk",
-		"vs/workbench/workbench.desktop.main.js": "bY1Tjin8eAWWlyeq6UNaOmuIVHwSK3YgNAzGj4jAhMg",
-		"vs/workbench/workbench.desktop.main.css": "2An+KnfdfK1wDEA8Yq5/K4+jWwrsiGiX6qW2D1MlmBY",
-		"vs/workbench/api/node/extensionHostProcess.js": "sqDzlbwMArldUUh51VT2xy3Sz5clQWWfO8xyJmNVIr8",
+		"vs/workbench/workbench.desktop.main.js": "2WosRQpM0Zc84XmGC6Oamde6yP9XAnMzfPjWhfszzeM",
+		"vs/workbench/workbench.desktop.main.css": "NLIYCOXo4Gl0PvtFMx5zzggkaLdPj0uIuWuW7TvBe1M",
+		"vs/workbench/api/node/extensionHostProcess.js": "60q2CsG9N9//VYawke5k6wrxQ0SoV89pN4JO5la42/s",
 		"vs/code/electron-browser/workbench/workbench.html": "y/1rUTZiVPFlnCpp+xudt09z5R/r1OulxFGN0tSQw90",
-		"vs/code/electron-browser/workbench/workbench.js": "YjWzEXZW5u0b8jaPjSFuX8u0cwBI61R/0JrOBZ1DrWM",
-		"vs/sessions/sessions.desktop.main.js": "9BiEizCfrsXrpMq7io9hjpR1TLLRiYCYSxstUIulb/s",
-		"vs/sessions/sessions.desktop.main.css": "+a/hWOUHSQct4dM75U4Ghv2YsVGO+pecfDybidUuffs",
+		"vs/code/electron-browser/workbench/workbench.js": "i1Fis4VOnsZp7WIh+AlAzSFIwcYGX4pJlxGehwHEu48",
+		"vs/sessions/sessions.desktop.main.js": "iGCdGYIFKV78SGwK5Y6E/Tul+jAw7vBA71e8gza/+ug",
+		"vs/sessions/sessions.desktop.main.css": "45Ii4W6b1j4KZoa8T09j3H61f4RuQDkWnm4UwxHm0+0",
 		"vs/sessions/electron-browser/sessions.html": "jVbR4zXGjojgXGd9jywXFQUssPI/EhZrxsk+VVhSeGM",
-		"vs/sessions/electron-browser/sessions.js": "5OyfaCiq43AJWBqz/wkcJy2o2wK5SQQ3aE1cfhMwOKI"
+		"vs/sessions/electron-browser/sessions.js": "f/+4sMxd0dJxsqUdXevpMA8oUVvxZJfAbee/ahxxA34"
 	},
-	"version": "1.115.0",
+	"version": "1.116.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
