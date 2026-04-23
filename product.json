@@ -137,8 +137,8 @@
 		},
 		{
 			"name": "ms-vscode.js-debug",
-			"version": "1.112.0",
-			"sha256": "c24322931434940938f8cf76ebc3dac1e95a5539b9625b165b6672d7f7eafea8",
+			"version": "1.117.0",
+			"sha256": "854eeb8a785b1f41ba2bd02d7ccd4fdbe10021b61473293973c7e96d036c7fb8",
 			"repo": "https://github.com/microsoft/vscode-js-debug",
 			"metadata": {
 				"id": "25629058-ddac-4e17-abba-74678e126c5d",
@@ -815,50 +815,6 @@
 			"label": "Notepad++",
 			"extensionId": "ms-vscode.notepadplusplus-keybindings",
 			"description": "Keyboard mapping from Notepad++"
-		}
-	],
-	"onboardingExtensions": [
-		{
-			"id": "ms-vscode-remote.remote-containers",
-			"name": "Dev Containers",
-			"publisher": "Microsoft",
-			"description": "Develop inside a container with a full-featured editor",
-			"icon": "remote-explorer"
-		},
-		{
-			"id": "ms-azuretools.vscode-docker",
-			"name": "Docker",
-			"publisher": "Microsoft",
-			"description": "Build, manage, and deploy containerized applications",
-			"icon": "package"
-		},
-		{
-			"id": "dbaeumer.vscode-eslint",
-			"name": "ESLint",
-			"publisher": "Microsoft",
-			"description": "Find and fix problems in your JavaScript code",
-			"icon": "lightbulb"
-		},
-		{
-			"id": "GitHub.vscode-pull-request-github",
-			"name": "GitHub Pull Requests",
-			"publisher": "GitHub",
-			"description": "Review and manage GitHub pull requests and issues",
-			"icon": "git-pull-request"
-		},
-		{
-			"id": "ms-python.python",
-			"name": "Python",
-			"publisher": "Microsoft",
-			"description": "Rich Python language support with IntelliSense and debugging",
-			"icon": "symbol-misc"
-		},
-		{
-			"id": "ms-vscode-remote.remote-ssh",
-			"name": "Remote - SSH",
-			"publisher": "Microsoft",
-			"description": "Open folders and files on a remote machine via SSH",
-			"icon": "remote"
 		}
 	],
 	"onboardingThemes": [
@@ -2931,20 +2887,20 @@
 	"builtInExtensionsEnabledWithAutoUpdates": [
 		"GitHub.copilot-chat"
 	],
-	"commit": "560a9dba96f961efea7b1612916f89e5d5d4d679",
-	"date": "2026-04-15T00:28:13Z",
+	"commit": "10c8e557c8b9f9ed0a87f61f1c9a44bde731c409",
+	"date": "2026-04-21T16:12:14-07:00",
 	"checksums": {
 		"vs/base/parts/sandbox/electron-browser/preload.js": "pEnkU8mcIZ0DvnCkVCVdSC12xeGMu3MUXKKluNx/Lnk",
-		"vs/workbench/workbench.desktop.main.js": "2WosRQpM0Zc84XmGC6Oamde6yP9XAnMzfPjWhfszzeM",
-		"vs/workbench/workbench.desktop.main.css": "NLIYCOXo4Gl0PvtFMx5zzggkaLdPj0uIuWuW7TvBe1M",
-		"vs/workbench/api/node/extensionHostProcess.js": "60q2CsG9N9//VYawke5k6wrxQ0SoV89pN4JO5la42/s",
+		"vs/workbench/workbench.desktop.main.js": "xxNGTJHaT7y9AcHRJP7PHdS9Rcln8RVOgS9cpILrK38",
+		"vs/workbench/workbench.desktop.main.css": "w5j7SHPTaAyiDwQ3RBti/tBlwIb6Os0pcuZbs/X7m2E",
+		"vs/workbench/api/node/extensionHostProcess.js": "ybKw6ca9sGGuzdpRKI4TMncEnMPdgfq/KRiIk001xRw",
 		"vs/code/electron-browser/workbench/workbench.html": "y/1rUTZiVPFlnCpp+xudt09z5R/r1OulxFGN0tSQw90",
-		"vs/code/electron-browser/workbench/workbench.js": "i1Fis4VOnsZp7WIh+AlAzSFIwcYGX4pJlxGehwHEu48",
-		"vs/sessions/sessions.desktop.main.js": "iGCdGYIFKV78SGwK5Y6E/Tul+jAw7vBA71e8gza/+ug",
-		"vs/sessions/sessions.desktop.main.css": "45Ii4W6b1j4KZoa8T09j3H61f4RuQDkWnm4UwxHm0+0",
+		"vs/code/electron-browser/workbench/workbench.js": "U5ABrNSuW9irI3Rysl4T53mYpA6ErazX7YRK2s3Z85s",
+		"vs/sessions/sessions.desktop.main.js": "Osf52++DlZB700dxTL63gMIT5xQ9TRVyrbiaf4HEOQ4",
+		"vs/sessions/sessions.desktop.main.css": "0NcxfLXPoKEQiMdm47yvzIO13ukwTmf3cA7FOi0IS20",
 		"vs/sessions/electron-browser/sessions.html": "jVbR4zXGjojgXGd9jywXFQUssPI/EhZrxsk+VVhSeGM",
-		"vs/sessions/electron-browser/sessions.js": "f/+4sMxd0dJxsqUdXevpMA8oUVvxZJfAbee/ahxxA34"
+		"vs/sessions/electron-browser/sessions.js": "evzXWMwOHj5zkOWeZRSwZEpDdftftCqD09gPUQEjhOQ"
 	},
-	"version": "1.116.0",
+	"version": "1.117.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
