@@ -37,6 +37,7 @@
 	"serverApplicationName": "code-server",
 	"urlProtocol": "vscode",
 	"dataFolderName": ".vscode",
+	"sharedDataFolderName": ".vscode-shared",
 	"serverDataFolderName": ".vscode-server",
 	"downloadUrl": "https://code.visualstudio.com",
 	"updateUrl": "https://update.code.visualstudio.com",
@@ -194,6 +195,23 @@
 		"openai"
 	],
 	"extensionRecommendations": {
+		"ms-vscode.vscode-chat-customizations-evaluations": {
+			"onFileOpen": [
+				{
+					"pathGlob": "{**/*prompt.md, **/*skill.md, **/*instructions.md, **/*agent.md}",
+					"important": true
+				},
+				{
+					"languages": [
+						"prompt",
+						"chatagent",
+						"skill",
+						"instructions"
+					],
+					"important": true
+				}
+			]
+		},
 		"ms-dotnettools.csdevkit": {
 			"onFileOpen": [
 				{
@@ -208,6 +226,14 @@
 				},
 				{
 					"pathGlob": "{**/project.json,**/appsettings.json}"
+				}
+			]
+		},
+		"microsoft-aspire.aspire-vscode": {
+			"onFileOpen": [
+				{
+					"pathGlob": "{**/apphost.cs,**/apphost.js,**/apphost.ts,**/apphost.py,**/AppHost.java,**/aspire.config.json,**/.aspire/settings.json}",
+					"important": true
 				}
 			]
 		},
@@ -2274,7 +2300,9 @@
 			"chatHooks",
 			"chatDebug",
 			"environmentPower",
-			"terminalTitle"
+			"terminalTitle",
+			"languageModelPricing",
+			"chatInputNotification"
 		],
 		"GitHub.remotehub": [
 			"contribRemoteHelp",
@@ -2401,6 +2429,10 @@
 		],
 		"ms-vscode.vscode-eng-codereview": [
 			"chatContextProvider"
+		],
+		"ms-vscode.vscode-chat-customizations-evaluations": [
+			"chatSessionCustomizationProvider",
+			"contribEditorContentMenu"
 		]
 	},
 	"tasConfig": {
@@ -2808,7 +2840,6 @@
 		"completionsQuotaExceededContext": "github.copilot.completions.quotaExceeded",
 		"walkthroughCommand": "github.copilot.open.walkthrough",
 		"completionsMenuCommand": "github.copilot.toggleStatusMenu",
-		"completionsRefreshTokenCommand": "github.copilot.signIn",
 		"chatRefreshTokenCommand": "github.copilot.refreshToken",
 		"generateCommitMessageCommand": "github.copilot.git.generateCommitMessage",
 		"resolveMergeConflictsCommand": "github.copilot.git.resolveMergeConflicts",
@@ -2887,20 +2918,20 @@
 	"builtInExtensionsEnabledWithAutoUpdates": [
 		"GitHub.copilot-chat"
 	],
-	"commit": "10c8e557c8b9f9ed0a87f61f1c9a44bde731c409",
-	"date": "2026-04-21T16:12:14-07:00",
+	"commit": "8b640eef5a6c6089c029249d48efa5c99adf7d51",
+	"date": "2026-05-05T11:23:50-07:00",
 	"checksums": {
 		"vs/base/parts/sandbox/electron-browser/preload.js": "pEnkU8mcIZ0DvnCkVCVdSC12xeGMu3MUXKKluNx/Lnk",
-		"vs/workbench/workbench.desktop.main.js": "xxNGTJHaT7y9AcHRJP7PHdS9Rcln8RVOgS9cpILrK38",
-		"vs/workbench/workbench.desktop.main.css": "w5j7SHPTaAyiDwQ3RBti/tBlwIb6Os0pcuZbs/X7m2E",
-		"vs/workbench/api/node/extensionHostProcess.js": "ybKw6ca9sGGuzdpRKI4TMncEnMPdgfq/KRiIk001xRw",
+		"vs/workbench/workbench.desktop.main.js": "PsiGHpiHlx4eesy259DBVL4nn5SQ+G93aMIaptysSJ8",
+		"vs/workbench/workbench.desktop.main.css": "/NBy0ozX1Hz4dnZ9f2dbcZDTR80FpKHLcHWH70KAd6E",
+		"vs/workbench/api/node/extensionHostProcess.js": "TWL3li6lIB+p+7m5A52F/xNsyttMbLemwHz7/QBfQcg",
 		"vs/code/electron-browser/workbench/workbench.html": "y/1rUTZiVPFlnCpp+xudt09z5R/r1OulxFGN0tSQw90",
-		"vs/code/electron-browser/workbench/workbench.js": "U5ABrNSuW9irI3Rysl4T53mYpA6ErazX7YRK2s3Z85s",
-		"vs/sessions/sessions.desktop.main.js": "Osf52++DlZB700dxTL63gMIT5xQ9TRVyrbiaf4HEOQ4",
-		"vs/sessions/sessions.desktop.main.css": "0NcxfLXPoKEQiMdm47yvzIO13ukwTmf3cA7FOi0IS20",
+		"vs/code/electron-browser/workbench/workbench.js": "nyxj97fr1Hz59kKWfHB0PvRy4SdgndXltiYqfdmVQdg",
+		"vs/sessions/sessions.desktop.main.js": "gDp+n+9YkorLlhS6ADoFJGfCIdxPNCaxeXbE/eDqLYM",
+		"vs/sessions/sessions.desktop.main.css": "ysrkJ64MjUV4OplfLToYgLFYXcvXrco4BUukTrUzfAw",
 		"vs/sessions/electron-browser/sessions.html": "jVbR4zXGjojgXGd9jywXFQUssPI/EhZrxsk+VVhSeGM",
-		"vs/sessions/electron-browser/sessions.js": "evzXWMwOHj5zkOWeZRSwZEpDdftftCqD09gPUQEjhOQ"
+		"vs/sessions/electron-browser/sessions.js": "U+b2ChbYPOQ7kPSPQPf8wu8CrHrFoc3FFqmEQaJipxc"
 	},
-	"version": "1.117.0",
+	"version": "1.119.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
