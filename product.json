@@ -47,28 +47,6 @@
 	"nlsCoreBaseUrl": "https://www.vscode-unpkg.net/nls/",
 	"webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/{{quality}}/{{commit}}/out/vs/workbench/contrib/webview/browser/pre/",
 	"quality": "stable",
-	"embedded": {
-		"nameShort": "Agents",
-		"nameLong": "Visual Studio Code Agents",
-		"applicationName": "agents",
-		"telemetryAppName": "agents",
-		"win32AppUserModelId": "Microsoft.VisualStudioCodeAgents",
-		"win32MutexName": "vscodeagents",
-		"win32RegValueName": "VSCodeAgents",
-		"win32NameVersion": "Microsoft Visual Studio Code Agents",
-		"win32VersionedUpdate": true,
-		"darwinBundleIdentifier": "com.microsoft.VSCodeAgents",
-		"dataFolderName": ".vscode-agents",
-		"urlProtocol": "vscode-agents",
-		"inheritAuthAccountPreference": {
-			"github.copilot": [
-				"github.copilot-chat"
-			],
-			"vscode.github": [
-				"github.copilot-chat"
-			]
-		}
-	},
 	"extensionsGallery": {
 		"nlsBaseUrl": "https://www.vscode-unpkg.net/_lp/",
 		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
@@ -2239,6 +2217,7 @@
 		],
 		"GitHub.copilot-chat": [
 			"agentSessionsWorkspace",
+			"agentsWindowConfiguration",
 			"interactive",
 			"terminalDataWriteEvent",
 			"terminalExecuteCommandEvent",
@@ -2918,20 +2897,47 @@
 	"builtInExtensionsEnabledWithAutoUpdates": [
 		"GitHub.copilot-chat"
 	],
-	"commit": "8b640eef5a6c6089c029249d48efa5c99adf7d51",
-	"date": "2026-05-05T11:23:50-07:00",
+	"sessionsWindowAllowedExtensions": [
+		"pkief.material-icon-theme",
+		"zhuangtongfa.material-theme",
+		"vscode-icons-team.vscode-icons",
+		"oderwat.indent-rainbow",
+		"formulahendry.auto-close-tag",
+		"pranaygp.vscode-css-peek",
+		"codezombiech.gitignore",
+		"usernamehw.errorlens",
+		"wayou.vscode-todo-highlight",
+		"bierner.markdown-mermaid",
+		"kisstkondoros.vscode-gutter-preview",
+		"tomoki1207.pdf",
+		"vscodevim.vim",
+		"ecmel.vscode-html-css",
+		"bradlc.vscode-tailwindcss",
+		"xabikos.JavaScriptSnippets",
+		"dsznajder.es7-react-js-snippets",
+		"formulahendry.auto-rename-tag",
+		"naumovs.color-highlight",
+		"streetsidesoftware.code-spell-checker",
+		"Vue.volar",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"redhat.vscode-xml",
+		"redhat.java"
+	],
+	"commit": "0958016b2af9f09bb4257e0df4a95e2f90590f9f",
+	"date": "2026-05-12T20:17:22Z",
 	"checksums": {
 		"vs/base/parts/sandbox/electron-browser/preload.js": "pEnkU8mcIZ0DvnCkVCVdSC12xeGMu3MUXKKluNx/Lnk",
-		"vs/workbench/workbench.desktop.main.js": "PsiGHpiHlx4eesy259DBVL4nn5SQ+G93aMIaptysSJ8",
-		"vs/workbench/workbench.desktop.main.css": "/NBy0ozX1Hz4dnZ9f2dbcZDTR80FpKHLcHWH70KAd6E",
-		"vs/workbench/api/node/extensionHostProcess.js": "TWL3li6lIB+p+7m5A52F/xNsyttMbLemwHz7/QBfQcg",
+		"vs/workbench/workbench.desktop.main.js": "6NwnV+7NLcd3UloZ8ItpmtI3CW6GmA6vqe772hC9nSU",
+		"vs/workbench/workbench.desktop.main.css": "HrXUGQjoxhKsCPmIdFc0NK9rHk+g7KrVsPk+uAXZX9U",
+		"vs/workbench/api/node/extensionHostProcess.js": "xA+ZCbpBskkpYEDaA/umxodYj2y9OHxmzF+EpwhP5io",
 		"vs/code/electron-browser/workbench/workbench.html": "y/1rUTZiVPFlnCpp+xudt09z5R/r1OulxFGN0tSQw90",
-		"vs/code/electron-browser/workbench/workbench.js": "nyxj97fr1Hz59kKWfHB0PvRy4SdgndXltiYqfdmVQdg",
-		"vs/sessions/sessions.desktop.main.js": "gDp+n+9YkorLlhS6ADoFJGfCIdxPNCaxeXbE/eDqLYM",
-		"vs/sessions/sessions.desktop.main.css": "ysrkJ64MjUV4OplfLToYgLFYXcvXrco4BUukTrUzfAw",
+		"vs/code/electron-browser/workbench/workbench.js": "qUjk0uD39M0hLy3bSu73CY9SSQGoXLSqjH7W9rPiWJg",
+		"vs/sessions/sessions.desktop.main.js": "kvqHe2W1eoq7dNOA5JP5LRzyzmk9KgfvBGnhRkx7Bho",
+		"vs/sessions/sessions.desktop.main.css": "AnAyEYbqzGjwv2lGuw0tKZbDUCYnMtanBn9Zq/UBFJQ",
 		"vs/sessions/electron-browser/sessions.html": "jVbR4zXGjojgXGd9jywXFQUssPI/EhZrxsk+VVhSeGM",
-		"vs/sessions/electron-browser/sessions.js": "U+b2ChbYPOQ7kPSPQPf8wu8CrHrFoc3FFqmEQaJipxc"
+		"vs/sessions/electron-browser/sessions.js": "beT0zNdf9UZc6T5XVb9bvqFrGRfhD7jhm1Zr0mW5YAo"
 	},
-	"version": "1.119.0",
+	"version": "1.120.0",
 	"darwinUniversalAssetId": "darwin-universal"
 }
